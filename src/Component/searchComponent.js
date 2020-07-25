@@ -26,7 +26,7 @@ const Search = (props) => {
 
     return (<div className="container">
         <div className="col-md-12">
-            <h3>Welcome to Assesment</h3>
+            <h3>Country Weather App</h3>
             <input type="text" className="form-control" placeholder="Enter Country" onChange={textHandle} />
             <button className="btn btn-primary mt-1" onClick={handleSubmit} disabled={inputState > 0 ? false : true}>Submit</button>
             {(getError && inputState > 0 )&& <div className="alert alert-danger mt-5" role="alert">
